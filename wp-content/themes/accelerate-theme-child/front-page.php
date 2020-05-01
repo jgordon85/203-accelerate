@@ -21,5 +21,16 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
-
+<section class="recent-posts">
+	<div class="site-content">
+		<div class="blog-post">
+			<h4>From the BLog</h4>
+			<?php query_posts('posts_per_page=1'); ?>
+				<?php while (have_posts() ) : the_post(); ?>
+					<h3><?php the_title(); ?></h3>
+					<?php the_excerpt(); ?>
+				<?php endwhile; ?>
+		</div>
+	</div>
+</section>
 <?php get_footer(); ?>
