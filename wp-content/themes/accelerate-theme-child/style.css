@@ -40,3 +40,18 @@ Text Domain:  accelerate-theme-child
   color: #45ac9d;
   text-transform: uppercase;
 }
+
+.site-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
