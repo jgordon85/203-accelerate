@@ -40,7 +40,7 @@ get_header(); ?>
 										<?php echo wp_get_attachment_image($image_1, $size); ?>
 								</figure>
 
-								<h3><a href="<php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						</li>
 					<?php endwhile; // end of the loop. ?>
 					<?php wp_reset_query(); // resets the altered query back to the original ?>
@@ -57,6 +57,7 @@ get_header(); ?>
 					<h3><?php the_title(); ?></h3>
 					<?php the_excerpt(); ?>
 				<?php endwhile; ?>
+				<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
 	</div>
 </section>
