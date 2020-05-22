@@ -107,6 +107,28 @@ div.case-study-images img {
   border: 1px solid #dddddd;
 }
 
+/* Footer */
+
+.social-media-navigation ul {
+  list-style: none;
+}
+
+.social-media-navigation li {
+  float: left;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 14%;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid #878787;
+  background-color: #878787;
+}
+
+.social-media-navigation li a {
+  color: #ffffff;
+  align-items: center;
+}
+
 /* Media Queries */
 @media (min-width: 768px ) {
   .featured-work .site-content {
