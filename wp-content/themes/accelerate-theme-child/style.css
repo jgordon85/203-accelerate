@@ -107,6 +107,52 @@ div.case-study-images img {
   border: 1px solid #dddddd;
 }
 
+/* Contact Form */
+
+.wp-block-table {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nf-form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nf-form-1-cont {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nf-before-field {
+
+}
+
+.nf-field {
+
+}
+
+.nf-field-label {
+  color: #000000;
+  font-size: .75em;
+}
+#nf-field-4 {
+  background-color: #45AC9D;
+}
+.nf-form-fields-required {
+  display: none;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
 /* Footer */
 
 .social-media-navigation ul {
