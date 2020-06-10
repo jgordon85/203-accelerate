@@ -121,6 +121,7 @@ div.case-study-images img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #nf-form-1-cont {
@@ -130,12 +131,11 @@ div.case-study-images img {
   justify-content: center;
 }
 
-.nf-before-field {
-
-}
-
-.nf-field {
-
+.contact .main-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nf-field-label {
@@ -144,6 +144,9 @@ div.case-study-images img {
 }
 #nf-field-4 {
   background-color: #45AC9D;
+  display: flex;
+  align-self: flex-end;
+  width: 30%;
 }
 .nf-form-fields-required {
   display: none;
@@ -173,6 +176,19 @@ div.case-study-images img {
 .social-media-navigation li a {
   color: #ffffff;
   align-items: center;
+}
+
+/* 404 */
+.not-found {
+  background-image: url(localhost:8888/accelerate/wp-content/uploads/2020/06/404.png) no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+
+.not-found h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: 'Londrina Solid', cursive;
 }
 
 /* Media Queries */
