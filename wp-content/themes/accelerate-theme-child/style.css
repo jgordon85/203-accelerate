@@ -108,6 +108,12 @@ div.case-study-images img {
 }
 
 /* Contact Form */
+.contact .main-content {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .wp-block-table {
   width: 75%;
@@ -117,22 +123,14 @@ div.case-study-images img {
   justify-content: center;
 }
 
-.nf-form-content {
+.contact .nf-form-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-#nf-form-1-cont {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact .main-content {
-  width: 90%;
+.contact #nf-form-1-cont {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,12 +140,18 @@ div.case-study-images img {
   color: #000000;
   font-size: .75em;
 }
+
 #nf-field-4 {
   background-color: #45AC9D;
   display: flex;
   align-self: flex-end;
-  width: 30%;
+  width: 25%;
 }
+
+#nf-field-4 p {
+
+}
+
 .nf-form-fields-required {
   display: none;
 }

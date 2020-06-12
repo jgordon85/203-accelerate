@@ -20,6 +20,7 @@ function accelerate_child_google_fonts() {
   wp_enqueue_style( 'accelerate-child-google-fonts', '//fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_google_fonts' );
+
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -57,4 +58,19 @@ function accelerate_body_child_classes( $classes ) {
   }
     return $classes;
 }
-add_filter( 'body_class','accelerate_child_body_classes' );
+add_filter( 'body_class','accelerate_body_child_classes' );
+
+function create_services() {
+		register_post_type( 'services',
+				array(
+						'labels'	=> array(
+								'name'	=> __( 'Services' ),
+								'singular_name'	=> __( 'Service' )
+							),
+							'public'	=> true,
+							'has_archive'	=> true,
+							'rewrite'	=> array( 'slug'	=> 'services' ),
+						)
+		);
+}
+add_action( 'init', 'create_services' );
