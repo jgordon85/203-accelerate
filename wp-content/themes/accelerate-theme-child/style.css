@@ -109,47 +109,46 @@ div.case-study-images img {
 
 /* Contact Form */
 .contact .main-content {
-  width: 20%;
+  width: 75%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+}
+
+.contact h2 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin-left: 13%;
 }
 
 .wp-block-table {
   width: 75%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin: 0 0 50px 15px;
 }
 
 .contact .nf-form-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+
 }
 
 .contact #nf-form-1-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 75%;
 }
 
 .nf-field-label {
   color: #000000;
-  font-size: .75em;
+  font-weight: 300;
 }
 
-#nf-field-4 {
+.contact #nf-field-4 {
   background-color: #45AC9D;
   display: flex;
+  flex-direction: column;
   align-self: flex-end;
   width: 25%;
-}
-
-#nf-field-4 p {
-
 }
 
 .nf-form-fields-required {

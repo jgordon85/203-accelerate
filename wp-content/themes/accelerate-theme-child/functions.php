@@ -53,7 +53,7 @@ add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
 
 // Add a body class if on contact page so can narrow width of page in combination with other page class
 function accelerate_body_child_classes( $classes ) {
-  if (is_page('contact') ) {
+  if (is_page('contact-us') ) {
     $classes[] = 'contact';
   }
     return $classes;
